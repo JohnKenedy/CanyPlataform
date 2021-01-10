@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "202503427746",
+    "project_id": "cany-english",
+    "storage_bucket": "cany-english.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202503427746:android:d5c4b40ddc5912e38869fb",
+        "android_client_info": {
+          "package_name": "com.canytech.cany"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202503427746-s6r3s2ack1k51rb4dho8v5e6h6in69kg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNiY9Or47UIF0miC8c1p3A94mJI5XQBds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202503427746-s6r3s2ack1k51rb4dho8v5e6h6in69kg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

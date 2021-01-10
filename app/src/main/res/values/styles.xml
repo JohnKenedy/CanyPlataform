@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CanyContainer">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
+    <style name="CanyTextViewForm" parent="CanyContainer">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width"> match_parent</item>
+        <item name="android:layout_height"> wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <style name="CanyTextViewBaseDialog">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="EditTextContainer" parent="CanyContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/green</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/lesswhite</item>
+    </style>
+
+    <style name="ButtonForm" parent="CanyContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ButtonFormLink" parent="CanyContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_bg_link</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="bg_corners_radius">bg_corners_radius
+    <item name="android:background">@drawable/bg_corners_radius</item>
+    </style>
+
+
+</resources>

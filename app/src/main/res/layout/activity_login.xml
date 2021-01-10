@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mlns="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    mlns:layout_width="match_parent"
+    mlns:layout_height="match_parent"
+    tools:context=".login.presentation.LoginActivity">
+
+    <LinearLayout
+        mlns:layout_width="match_parent"
+        mlns:layout_height="match_parent"
+        mlns:orientation="vertical">
+
+        <ImageView
+            mlns:layout_width="wrap_content"
+            mlns:layout_height="230dp"
+            mlns:scaleType="centerCrop"
+            mlns:src="@drawable/bg_app" />
+
+        <ImageView
+            mlns:layout_width="wrap_content"
+            mlns:layout_height="230dp"
+            mlns:scaleType="centerCrop"
+            mlns:src="@drawable/bg_app" />
+
+        <ImageView
+            mlns:layout_width="wrap_content"
+            mlns:layout_height="230dp"
+            mlns:scaleType="centerCrop"
+            mlns:src="@drawable/bg_app" />
+
+        <ImageView
+            mlns:layout_width="wrap_content"
+            mlns:layout_height="230dp"
+            mlns:scaleType="centerCrop"
+            mlns:src="@drawable/bg_app" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        mlns:layout_width="match_parent"
+        mlns:layout_height="match_parent"
+        mlns:background="@color/less_dark_blue"
+        mlns:orientation="vertical" />
+
+    <ScrollView
+        mlns:layout_width="match_parent"
+        mlns:layout_gravity="bottom"
+        mlns:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            tools:context=".login.presentation.LoginActivity">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/dark_blue"
+                android:padding="10dp"
+                app:cardCornerRadius="15dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/cany_logot" />
+
+                    <EditText
+                        android:id="@+id/edit_text_login_email"
+                        style="@style/EditTextContainer"
+                        android:hint="@string/type_email" />
+
+                    <EditText
+                        android:id="@+id/edit_text_login_password"
+                        style="@style/EditTextContainer"
+                        android:hint="@string/type_password" />
+
+                    <com.canytech.cany.common.view.LoadingButton
+                        android:id="@+id/button_login_access"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:text="@string/access" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/dark_blue"
+                app:cardCornerRadius="15dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_login_forgot_password"
+                    style="@style/ButtonFormLink"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="@string/forgot_password" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_login_not_registered"
+                style="@style/ButtonForm"
+                android:layout_marginStart="-25dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="-25dp"
+                android:layout_marginBottom="-5dp"
+                android:text="@string/not_registered"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

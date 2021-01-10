@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:background="@color/dark_blue"
+    android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_icon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:src="@drawable/perfilphoto"/>
+
+    <TextView
+        android:id="@+id/text_your_account"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_account"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/text_your_account_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_settings"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/text_your_account"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/text_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_your_account_desc"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_name"
+        app:layout_constraintTop_toBottomOf="@id/text_profile"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/txt_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/john_name"
+        app:layout_constraintTop_toBottomOf="@id/text_profile"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_user_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_email"
+        app:layout_constraintTop_toBottomOf="@id/view_1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/txt_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/john_email"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/view_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_user_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_password"
+        app:layout_constraintTop_toBottomOf="@id/view_2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/txt_user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrow"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/view_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium" />
+
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_user_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_subscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subscription"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_3"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/text_type_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_student"
+        app:layout_constraintTop_toBottomOf="@id/text_subscription"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/type_subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_subscription"
+        app:layout_constraintTop_toBottomOf="@id/text_subscription"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/text_type_student"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_info_subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subscription"
+        app:layout_constraintTop_toBottomOf="@id/view_4"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/txt_user_subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_subscription"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/view_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <View
+        android:id="@+id/view_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_user_subscription"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_cancel_subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_subscription"
+        app:layout_constraintTop_toBottomOf="@id/view_5"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/txt_user_cancel_subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrow"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/view_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium" />
+
+    <View
+        android:id="@+id/view_6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_user_cancel_subscription"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/help_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/h_c"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_6"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/help_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_center"
+        app:layout_constraintTop_toBottomOf="@id/help_contact"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/help_center_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrow"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/help_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium" />
+
+    <View
+        android:id="@+id/view_7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/help_center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_leave_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leave_review"
+        app:layout_constraintTop_toBottomOf="@id/view_7"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/text_leave_review_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/view_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light" />
+
+    <View
+        android:id="@+id/view_8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/text_leave_review"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/others"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_8"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/end_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_session"
+        app:layout_constraintTop_toBottomOf="@id/others"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/end_session_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/others"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/montserrat_medium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

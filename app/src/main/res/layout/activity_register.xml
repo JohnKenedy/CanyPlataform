@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:mlns="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    mlns:layout_width="match_parent"
+    mlns:layout_height="match_parent"
+    tools:context=".register.presentation.RegisterActivity">
+
+    <LinearLayout
+        mlns:layout_width="match_parent"
+        mlns:layout_height="match_parent"
+        mlns:orientation="vertical">
+
+        <ImageView
+            mlns:layout_width="wrap_content"
+            mlns:layout_height="230dp"
+            mlns:scaleType="centerCrop"
+            mlns:src="@drawable/bg_app" />
+
+        <ImageView
+            mlns:layout_width="wrap_content"
+            mlns:layout_height="230dp"
+            mlns:scaleType="centerCrop"
+            mlns:src="@drawable/bg_app" />
+
+        <ImageView
+            mlns:layout_width="wrap_content"
+            mlns:layout_height="230dp"
+            mlns:scaleType="centerCrop"
+            mlns:src="@drawable/bg_app" />
+
+        <ImageView
+            mlns:layout_width="wrap_content"
+            mlns:layout_height="230dp"
+            mlns:scaleType="centerCrop"
+            mlns:src="@drawable/bg_app" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        mlns:layout_width="match_parent"
+        mlns:layout_height="match_parent">
+
+        <ScrollView
+            mlns:layout_width="match_parent"
+            mlns:layout_height="wrap_content"
+            mlns:layout_gravity="bottom">
+
+            <LinearLayout
+                mlns:layout_width="match_parent"
+                mlns:layout_height="wrap_content"
+                mlns:orientation="vertical">
+
+                <fragment
+                    mlns:id="@+id/register_fragment"
+                    mlns:name="com.canytech.cany.register.presentation.RegisterPhotoFragment"
+                    mlns:layout_width="match_parent"
+                    mlns:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_register_photo" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

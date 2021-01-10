@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_register"
+    tools:context=".register.presentation.RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="@color/dark_blue"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            tools:context=".register.presentation.RegisterActivity"
+            tools:showIn="@layout/activity_register">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/welcomephoto" />
+
+            <TextView
+                style="@style/CanyTextViewForm"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:text="@string/welcome_to_cany"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.canytech.cany.common.view.LoadingButton
+        android:id="@+id/button_register_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        app:text="@string/next" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/main_photo_language_bg"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_app"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_register_registered"
+            style="@style/ButtonForm"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="-25dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="-25dp"
+            android:layout_marginBottom="-5dp"
+            android:text="@string/cookies"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+</LinearLayout>
