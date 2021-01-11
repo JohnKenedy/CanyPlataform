@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/dark_blue"
+    tools:context=".main.presentation.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@color/dark_blue"
+            tools:context=".main.presentation.MainActivity">
+
+            <ImageView
+                android:id="@+id/main_photo_language_bg"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/bg_app"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_language"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/estadosunidos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_view_home_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/papaperfilphoto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_home_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="@string/hello_studant"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/text_view_home_continue_studies"
+                app:layout_constraintStart_toEndOf="@id/image_view_home_profile"
+                app:layout_constraintTop_toTopOf="@id/image_view_home_profile" />
+
+            <TextView
+                android:id="@+id/text_view_home_continue_studies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:fontFamily="@font/montserrat_light"
+                android:layout_marginStart="10dp"
+                android:text="@string/hello_studant_continue_your_studies"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/image_view_home_profile"
+                app:layout_constraintTop_toBottomOf="@id/text_view_home_name" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_home_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/noColor"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_view_home_profile">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/asdasd" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_main"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/dark_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view_home_welcome"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listitem="@layout/category_item"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

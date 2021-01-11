@@ -9,7 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cany">
+        <activity android:name=".main.home.presentation.HomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".register.presentation.RegisterActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".main.home.presentation.ClassesActivity"
             android:screenOrientation="portrait"
             />
 
@@ -18,14 +31,9 @@
             />
 
         <activity android:name=".main.presentation.MainActivity"
-            android:screenOrientation="portrait"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:screenOrientation="portrait"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
 
     </application>
 
